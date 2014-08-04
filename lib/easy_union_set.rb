@@ -1,0 +1,2 @@
+module EasyUnionSet
+end
