@@ -7,11 +7,11 @@ require "easy_union_set/version"
 Gem::Specification.new do |s|
   s.name        = "easy_union_set"
   s.version     = EasyUnionSet::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of EasyUnionSet."
-  s.description = "TODO: Description of EasyUnionSet."
+  s.authors     = ["George Taveras"]
+  s.email       = ["george.taveras1231@gmail.com"]
+  s.homepage    = "https://github.com/GeorgeTaveras1231/easy_union_set"
+  s.summary     = "Easily create sql UNIONS and INTERSECTS in ActiveRecord"
+  s.description = "A lightweight gem that provides two AR:Relation methods to create unions and sets #& and #|"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
