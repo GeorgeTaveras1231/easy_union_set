@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     easy_union_set (0.0.1)
-      rails (~> 4.1.4)
+      activerecord
 
 GEM
   remote: https://rubygems.org/
@@ -35,7 +35,6 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
-    coderay (1.1.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     factory_girl (4.4.0)
@@ -51,15 +50,10 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.4.0)
     multi_json (1.10.1)
     polyglot (0.3.5)
-    pry (0.10.0)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -95,7 +89,6 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.3)
-    slop (3.6.0)
     sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -122,6 +115,6 @@ DEPENDENCIES
   easy_union_set!
   factory_girl_rails
   faker
-  pry
+  rails
   rspec-rails
   sqlite3
