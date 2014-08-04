@@ -25,3 +25,5 @@ Project.where("title LIKE '%a%'") | {:all => Project.having("LENGTH(description)
 
 # => SELECT "projects".* FROM ( SELECT "projects".* FROM "projects"  WHERE (title LIKE '%a%') UNION ALL SELECT "projects".* FROM "projects"  GROUP BY id HAVING LENGTH(description) > 10 ) "projects"
 ```
+
+if for some reason you'd still rather make multiple queries and make a ruby union simply call #to_a on the AR:Relation object before using the #& or #| methods.
