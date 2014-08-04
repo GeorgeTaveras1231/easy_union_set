@@ -3,6 +3,12 @@
 
 easily create unions and intersections in ActiveRecord.
 
+Setup
+
+```ruby
+gem 'easy_union_set'
+```
+
 Easy to use, So I'll jump straight into the examples
 
 to create a UNION
