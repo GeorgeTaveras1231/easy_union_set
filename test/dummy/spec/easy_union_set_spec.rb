@@ -27,7 +27,7 @@ describe EasyUnionSet do
       project1 = create(:project, :title => "George's project")
       project2 = create(:project, :description => "some proj")
       project3 = create(:project, :category => "projectile")
-
+      
       expect(Project.where("title LIKE '%proj%'") | Project.where("description LIKE '%proj%'") | Project.where("category LIKE '%proj%'")).to include(project1, project2, project3)
     end
 
@@ -50,5 +50,11 @@ describe EasyUnionSet do
       expect(Project.where("title LIKE '%proj%'") & Project.where("description LIKE '%proj%'") & Project.where("category LIKE 'blahblah'")).to be_empty
     end
 
+  end
+
+  it "still allows me to make ruby unions and intersects by using the to_a method" do
+      project = create(:project, :title => "George's project", :description => "some proj", :category => "projectile")
+      
+    expect(Project.where("title LIKE '%proj%'").to_a & Project.where("description LIKE '%proj%'").to_a & Project.where("category LIKE '%proj%'").to_a).to include(project)
   end
 end
