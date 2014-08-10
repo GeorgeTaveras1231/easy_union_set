@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    easy_union_set (0.0.1)
+    easy_union_set (1.0.0)
       activerecord
 
 GEM
